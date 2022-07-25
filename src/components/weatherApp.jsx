@@ -11,9 +11,13 @@ export default function WeatherApp() {
         try {
             const req = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_KEY}&q=${city}&days=4&aqi=no&alerts=no`)
             const json = await req.json()
+            json.location.name ? 
+            console.log('success') : 
+            alert('Name not found')
             setWeather(json)
         } catch (error) {
             console.log('catched')
+            alert('Error: ' + error)
             console.error(error)
         }
     }
@@ -21,7 +25,6 @@ export default function WeatherApp() {
     function handleChangeCity(city) {
         setWeather(null)
         loadInfo(city)
-        console.log({weather})
     }
 
     useEffect(() => {
@@ -29,7 +32,6 @@ export default function WeatherApp() {
     }, [])
 
     useEffect(() => {
-        console.log(weather)
         document.title = `Weather | ${weather?.location.name ?? ""}`
       })
 

@@ -1,5 +1,7 @@
-*,body {
+body {
   background: url('https://img.freepik.com/free-vector/night-sky-clouds-with-full-moon-stars-blue-background-vector-cartoon-illustration-fluffy-cloudy-panorama-moonlight-peaceful-atmosphere-landscape-midnight_107791-10803.jpg?w=900&t=st=1658761784~exp=1658762384~hmac=4f0a2ebc965c14f3a41463b463b0da46df14699be768137cdfbee2f4c0a87df0');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }

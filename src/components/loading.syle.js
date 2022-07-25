@@ -16,7 +16,7 @@ export const Loader = styled.div`
     box-sizing: border-box;
     padding: 10px;
     background: rgb(2, 0, 36);
-    background: linear-gradient(43deg, rgba(2, 0, 36, 1) 0%, rgb(97, 9, 121) 35%, rgb(245, 119, 207) 100%);
+    background: linear-gradient(43deg, rgba(2, 0, 36, 1) 0%, rgba(0,0,255,1) 35%, rgba(135,206,235,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ export const Loader = styled.div`
     animation: rotation 0.5s linear infinite;
 
     & div {
-    background-color: rgb(59, 15, 99);
+    background-color: darkblue;
     width: 20px;
     height: 20px;
     box-sizing: border-box;

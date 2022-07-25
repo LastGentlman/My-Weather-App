@@ -3,13 +3,10 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: row;
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     margin-top:0px;
-    border: 1px solid green;
 `;
 
 export const Info = styled.div`
@@ -22,6 +19,7 @@ export const Info = styled.div`
     height: 400px;
     margin-top: 0%;
     margin-bottom: 10%;
+    background-color: rgba(4, 19, 127, 0.408);
 `;
 
 export const City = styled.div`
@@ -76,28 +74,28 @@ export const Current = styled.div`
 
 export const Map = styled.div`
     margin-top: 3%;
+    margin-bottom: 0;
 `;
 
 export const ForeCast = styled.div`
-    float: left;
-    background-color: transparent;
-    padding: 20px;
+    background-color: rgba(4, 19, 127, 0.408);
     border-radius: 18px;
     border: solid white;
     width: 500px;
     height: 400px;
-    margin-top: 0%;
+    margin-top: 0;
     margin-bottom: 10%;
-    margin-left: 0%;
-    margin-right: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
 `;
 
 export const Next = styled.h1`
-    color: blueviolet;
+    color: orange;
+    text-align: center;
+    font-weight: bolder;
     font-size: 30px;
     text-shadow: black 0.1em 0.1em 0.2em;
-    margin-left: 30px;
-    margin-top: 10px;
 `;
 
 export const Day = styled.div`
@@ -111,8 +109,7 @@ export const Box = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 10%;
+    margin-top: 0;
 `;
 
 export const Icons = styled.div`
