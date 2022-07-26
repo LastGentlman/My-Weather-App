@@ -1,20 +1,31 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.div`
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+    @media only screen and (min-width:768px) {
+        margin-left: 6rem;
+        display: flex;
+        border: none;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 `;
 
 export const Title = styled.h1`
     color: skyblue;
     text-align: center;
-    font-size: 50px;
-    margin-top: 19px;
-    margin-bottom: 19px;
+    font-size: 35px;
+    margin-top: 4px;
+    margin-bottom: 3px;
     text-shadow: black 0.1em 0.1em 0.2em;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 50px;
+        margin-top: 4px;
+        margin-bottom: 19px;
+    }
 `;
 
 export const Container = styled.div`

@@ -10,16 +10,20 @@ export const MainContainer = styled.div`
 `;
 
 export const Info = styled.div`
-    float: left;
-    background-color: transparent;
-    padding: 20px;
     border-radius: 18px;
     border: solid white;
-    width: 500px;
-    height: 400px;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    background-color: rgba(4, 19, 127, 0.408);
+    padding: 0.5em;
+
+    @media only screen and (min-width: 768px) {
+        float: left;
+        background-color: transparent;
+        padding: 20px;
+        width: 500px;
+        height: 400px;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        background-color: rgba(4, 19, 127, 0.408);
+    }
 `;
 
 export const City = styled.div`
@@ -78,16 +82,19 @@ export const Map = styled.div`
 `;
 
 export const ForeCast = styled.div`
-    background-color: rgba(4, 19, 127, 0.408);
     border-radius: 18px;
     border: solid white;
-    width: 500px;
-    height: 400px;
-    margin-top: 0;
-    margin-bottom: 10%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+        background-color: rgba(4, 19, 127, 0.408);
+        width: 500px;
+        height: 400px;
+        margin-top: 0;
+        margin-bottom: 10%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0;
+    }
 `;
 
 export const Next = styled.h1`

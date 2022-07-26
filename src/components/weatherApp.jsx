@@ -9,7 +9,11 @@ export default function WeatherApp() {
     
     async function loadInfo(city = 'Kyoto') {
         try {
+<<<<<<< HEAD
             const req = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_KEY}&q=${city}&days=4&aqi=no&alerts=no`)
+=======
+            const req = await fetch(`${import.meta.env.VITE_API_URL}?key=${import.meta.env.VITE_API_KEY}&q=${city}&days=4&aqi=no&alerts=no`)
+>>>>>>> 6a152f3 (responsive design)
             const json = await req.json()
             json.location.name ? 
             console.log('success') : 
