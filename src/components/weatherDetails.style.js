@@ -7,12 +7,17 @@ export const MainContainer = styled.div`
     flex-wrap: wrap;
     grid-gap: 5px;
     margin-top:0px;
+    
+    @media only screen and (min-width:768px) {
+        grid-gap: 15px;
+    }
 `;
 
 export const Info = styled.div`
     border-radius: 18px;
     border: solid white;
     padding: 0.5em;
+    width: 87%;
 
     @media only screen and (min-width: 768px) {
         float: left;
@@ -84,13 +89,15 @@ export const Map = styled.div`
 export const ForeCast = styled.div`
     border-radius: 18px;
     border: solid white;
-
+    width: 90%;
+    
     @media only screen and (min-width: 768px) {
         background-color: rgba(4, 19, 127, 0.408);
         width: 500px;
         height: 400px;
         margin-top: 0;
         margin-bottom: 10%;
+        margin-left: 0;
         overflow-x: hidden;
         overflow-y: auto;
         padding: 0;

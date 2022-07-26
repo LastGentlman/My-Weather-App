@@ -12,6 +12,7 @@ export const Container = styled.form`
         margin: 0;
         font-size: 14px;
     }
+    
 @media only screen and (min-width: 768px){
     margin: 15px 0;
     display: grid;

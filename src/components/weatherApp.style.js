@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.div`
+    margin-left: 0;
+
     @media only screen and (min-width:768px) {
         margin-left: 6rem;
         display: flex;
